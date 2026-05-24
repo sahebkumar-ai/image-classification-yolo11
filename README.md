@@ -67,47 +67,6 @@ cd YOLO11-Image-Classification
 pip install ultralytics
 ```
 
----
-
-## ▶️ Training
-
-```python
-from ultralytics import YOLO
-
-# Load pretrained classification model
-model = YOLO("yolo11s-cls.pt")
-
-# Train model
-results = model.train(
-    data="custom_dataset",
-    epochs=10,
-    imgsz=640
-)
-```
-
----
-
-## 🔍 Inference
-
-### Single Image Prediction
-
-```python
-from ultralytics import YOLO
-
-model = YOLO("runs/classify/train/weights/best.pt")
-
-results = model(
-    "test_images/0.jpg",
-    save=True,
-    imgsz=640,
-    conf=0.5
-)
-
-results[0].show()
-```
-
----
-
 ### Batch Prediction
 
 ```python

@@ -67,14 +67,6 @@ cd YOLO11-Image-Classification
 pip install ultralytics
 ```
 
-### Batch Prediction
-
-```python
-results = model("test_images", save=True)
-```
-
----
-
 ## 📊 Model Workflow
 
 - Load pretrained YOLO11 classification model
